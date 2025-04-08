@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100vw;
+}
+
+
+
+/* start styling */
+
+
+
+/* Navigation - Bar */
+#nav{
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 7vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    margin: 0%;
+}
+#nav>#leftsubnav{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(206, 113, 0);
+    border: none;
+}
+#nav>#midsubnav{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(135, 74, 0);
+    border: none;
+}
+#nav>#rightsubnav{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(69, 38, 0);
+    border: none;
+}
+
+
+
+
+/*  Main - pages */
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.page{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+#page1{
+    height: 93vh;
+    background-color: 	#2b310a;
+}
+#page2{
+    background-color: #04127B;
+}
+#page3{
+    background-color: #BAE2EE;
+}
+#page4{
+    background-color: rgb(70,70,70);
+}
+#page5{
+    background-color: rgb(90,90,90);
+}
+#page6{
+    background-color: rgb(120,120,120);
+}
+#page7{
+    background-color: rgb(150,150,150);
+}
+#page8{
+    background-color: rgb(170,170,170);
+}
+#page9{
+    background-color: rgb(200,200,200);
+}
+
+
+
+
+/* Footer */
+footer{
+    height: 40vh;
+    width: 100vw;
+    color: white;
+    background-color: rgb(29, 29, 51);
+}
