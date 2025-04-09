@@ -12,13 +12,16 @@
 10. Photo/Video Gallery
 11. Footer
 
-## nav
+<!-- ## nav
 - Home
 - Indian Special Forces
 - Defence News
 - Research & Development
 - About
-- Contact
+- Contact 
+
+COMPLETED
+-->
 
 # Indian Army
 # Indian Navy

@@ -20,29 +20,68 @@ html,body{
     background-color: whitesmoke;
     width: 100vw;
     height: 7vh;
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: row;
     padding: 0%;
     margin: 0%;
+    z-index: 1000;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
 #nav>#leftsubnav{
+    position: relative;
     width: 35%;
     height: 100%;
-    background-color: rgb(206, 113, 0);
+    background-color: rgb(17, 30, 7);
     border: none;
+    display: flex;
+    align-items: center;
 }
+#nav>#leftsubnav>#bd_logo{
+    width: 15%;
+    height: 100%;
+}
+#nav>#leftsubnav>#bd_text{
+    width: 60%;
+    height: 550%;
+}
+
 #nav>#midsubnav{
     width: 30%;
     height: 100%;
-    background-color: rgb(135, 74, 0);
+    background-color: rgb(17, 30, 7);
     border: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
+#nav>#midsubnav>#flag{
+    width:auto;
+    height: 100%;
+}
+
 #nav>#rightsubnav{
     width: 35%;
     height: 100%;
-    background-color: rgb(69, 38, 0);
+    padding: 5px;
+    background-color: rgb(17, 30, 7);
     border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#nav>#rightsubnav>.logos{
+    color: white;
+    font-size: 20px;
+    margin-right: 10%;
+    margin-top: 1vh;
+}
+#nav>#rightsubnav>#rightmostlogo{
+    margin-right: 5%;
 }
 
 
@@ -63,6 +102,7 @@ html,body{
 }
 
 #page1{
+    margin-top: 7vh;
     height: 93vh;
     background-color: 	#2b310a;
 }
