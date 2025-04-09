@@ -18,3 +18,28 @@ tl1.from("#nav #rightsubnav i", {
     stagger : 0.13,
     opacity : 0,
 })
+
+
+
+const logos = document.querySelectorAll("#nav>#rightsubnav>.logos");
+
+logos.forEach(logo => {
+    logo.addEventListener("mouseover", function() {
+        gsap.to(this, {
+            scale: 1.5,
+            color: "#808080",
+            duration: 0.3,
+            scrub : 5,
+        });
+    });
+
+    logo.addEventListener("mouseout", function() {
+        gsap.to(this, {
+            scale: 1,
+            color: "white",
+            scrub : 2,
+            ease : "elastic.out(2, 0.3)",
+            duration: 0.5,
+        });
+    });
+});

@@ -19,7 +19,7 @@ html,body{
 #nav{
     background-color: whitesmoke;
     width: 100vw;
-    height: 7vh;
+    height:40px;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -38,13 +38,16 @@ html,body{
     border: none;
     display: flex;
     align-items: center;
+    justify-content: left;
 }
 #nav>#leftsubnav>#bd_logo{
-    width: 15%;
-    height: 100%;
+    margin-top: 10px;
+    width: 100px;
+    height: 200%;
 }
 #nav>#leftsubnav>#bd_text{
-    width: 60%;
+    width: 300px;
+    margin-top: 10px;
     height: 550%;
 }
 
@@ -77,11 +80,11 @@ html,body{
 #nav>#rightsubnav>.logos{
     color: white;
     font-size: 20px;
-    margin-right: 10%;
-    margin-top: 1vh;
+    margin-right: 25px;
+    margin-top: 8px;
 }
 #nav>#rightsubnav>#rightmostlogo{
-    margin-right: 5%;
+    margin-right: 40px;
 }
 
 
@@ -102,8 +105,8 @@ html,body{
 }
 
 #page1{
-    margin-top: 7vh;
-    height: 93vh;
+    margin-top: 40px;
+    height: 95vh;
     background-color: 	#2b310a;
 }
 #page2{
