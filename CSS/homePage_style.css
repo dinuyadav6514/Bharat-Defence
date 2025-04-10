@@ -24,7 +24,7 @@ html,body{
 #nav{
     background-color: whitesmoke;
     width: 100vw;
-    height:40px;
+    height:50px;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -39,7 +39,7 @@ html,body{
     position: relative;
     width: 35%;
     height: 100%;
-    background-color: rgb(17, 30, 7);
+    background-color: whitesmoke;
     border: none;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ html,body{
 #nav>#midsubnav{
     width: 30%;
     height: 100%;
-    background-color: rgb(17, 30, 7);
+    background-color: whitesmoke;
     border: none;
     display: flex;
     position: relative;
@@ -67,7 +67,7 @@ html,body{
     justify-content: center;
 }
 #nav>#midsubnav>#flag{
-    background-color: rgb(17, 30, 7);
+    background-color: whitesmoke;
     width:auto;
     height: 100%;
 }
@@ -76,7 +76,7 @@ html,body{
     width: 35%;
     height: 100%;
     padding: 5px;
-    background-color: rgb(17, 30, 7);
+    background-color: whitesmoke;
     border: none;
     position: relative;
     display: flex;
@@ -84,7 +84,7 @@ html,body{
     justify-content: right;
 }
 #nav>#rightsubnav>.logos{
-    color: white;
+    color: black;
     font-size: 20px;
     margin-right: 25px;
     margin-top: 8px;
@@ -107,7 +107,7 @@ html,body{
 #main{
     position: relative;
     overflow: hidden;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 
@@ -121,14 +121,21 @@ html,body{
 /*page 1*/
 #page1{
     margin-top: 40px;
-    background-color: 	#2b310a;
+    background-color: 	whitesmoke;
     position: relative;
     display: flex;
     overflow: hidden;
 }
 
 #page2{
-    background-color: #04127B;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+#page3{
+    background-color: whitesmoke;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -137,32 +144,9 @@ html,body{
 
 
 
+/* Generl Elements */
 
 
-
-
-
-
-
-
-/* Footer */
-footer{
-    height: 40vh;
-    width: 100vw;
-    color: white;
-    background-color: black;
-}
-
-
-
-
-
-
-
-
-
-
-/* Testing CSS */
 
 .bg-container{
     position: relative;
@@ -179,7 +163,7 @@ footer{
     height: 100%;
     overflow: hidden;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 .bg-video{
     position: absolute;
@@ -201,7 +185,7 @@ footer{
     overflow: hidden;
     z-index: 5;
 }
-.bg-imagef{
+.bg-image-badge{
     object-fit: cover;
     width: 90%;
     height: 90%;
@@ -315,4 +299,53 @@ footer{
     text-align: center;
     padding: 10px;
 }
-    
+
+
+/* base - page */
+.base-page{
+    width: 100vw;
+    height: 70vh;
+    min-height: 400px;
+    max-height: 600px;
+    background-color: whitesmoke;
+}
+
+
+
+/* Navy specific styles */
+
+#navy-badge{
+    height: 80%;
+    width: auto;
+}
+
+/* Air force specific styles */
+
+/* #iaf-bg-video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iaf-background-video{
+    transform: translateY(-12.5%);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    height: 40vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}

@@ -13,7 +13,7 @@ logos.forEach(logo => {
     logo.addEventListener("mouseout", function() {
         gsap.to(this, {
             scale: 1,
-            color: "white",
+            color: "black",
             ease : "elastic.out(2, 0.3)",
             duration: 0.5,
         });
@@ -29,7 +29,7 @@ const armySubHeading = document.querySelector("#army-subheading-text");
 const armyButton = document.querySelector("#army-button");
 
 gsap.from(armyBadge,{
-    delay : 1,
+    delay : 0.5,
     duration : 1,
     scale : 0,
     opacity : 0,
@@ -39,7 +39,7 @@ gsap.from(armyBadge,{
 const tl2 = gsap.timeline();
 
 tl2.from(armyHeading,{
-    delay : 1, 
+    delay : 0.2, 
     duration : 1,
     y : "200%",
 })
@@ -66,8 +66,49 @@ gsap.from(bottomInfo, {
     scrollTrigger: {
         scroller : "body",
         trigger : pageContentBottom,
-        markers: true,
         start : "top 60%",
-        end : "top 5%"
+        end : "top 5%",
     }
+})
+
+bottomInfo.forEach(info => {
+    info.addEventListener("mouseenter", function() {
+        gsap.to(this, {
+            scaleX: 1.2,
+            duration: 0.3,
+        });
+    });
+    info.addEventListener("mouseleave", function() {
+        gsap.to(this, {
+            scale: 1,
+            duration: 0.3,
+        });
+    });
+})
+
+// Animations for the army background video
+
+const armyBgVideo = document.querySelector("#army-background-video");
+gsap.from(armyBgVideo,{
+    opacity : 0,
+    duration : 5,
+    delay : 0.2,
+})
+
+// Animations for badge
+const badge = document.querySelectorAll(".bg-image-badge");
+
+badge.forEach(bdg => {
+    bdg.addEventListener("mouseenter", function() {
+        gsap.to(this, {
+            scale: 1.1,
+            duration: 0.3,
+        });
+    });
+    bdg.addEventListener("mouseleave", function() {
+        gsap.to(this, {
+            scale: 1,
+            duration: 0.3,
+        });
+    });
 })
