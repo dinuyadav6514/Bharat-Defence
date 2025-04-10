@@ -1,8 +1,13 @@
+.black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    box-sizing: border-box;   
 }
 html,body{
     height: 100%;
@@ -62,6 +67,7 @@ html,body{
     justify-content: center;
 }
 #nav>#midsubnav>#flag{
+    background-color: rgb(17, 30, 7);
     width:auto;
     height: 100%;
 }
@@ -87,6 +93,12 @@ html,body{
     margin-right: 40px;
 }
 
+/* NAV END */
+
+
+
+
+
 
 
 
@@ -95,44 +107,40 @@ html,body{
 #main{
     position: relative;
     overflow: hidden;
+    background-color: white;
 }
 
 
 .page{
     color: white;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
+    min-height: 775px;
 }
 
+/*page 1*/
 #page1{
     margin-top: 40px;
-    height: 95vh;
     background-color: 	#2b310a;
+    position: relative;
+    display: flex;
+    overflow: hidden;
 }
+
 #page2{
     background-color: #04127B;
+    position: relative;
+    display: flex;
+    overflow: hidden;
 }
-#page3{
-    background-color: #BAE2EE;
-}
-#page4{
-    background-color: rgb(70,70,70);
-}
-#page5{
-    background-color: rgb(90,90,90);
-}
-#page6{
-    background-color: rgb(120,120,120);
-}
-#page7{
-    background-color: rgb(150,150,150);
-}
-#page8{
-    background-color: rgb(170,170,170);
-}
-#page9{
-    background-color: rgb(200,200,200);
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -142,5 +150,169 @@ footer{
     height: 40vh;
     width: 100vw;
     color: white;
-    background-color: rgb(29, 29, 51);
+    background-color: black;
 }
+
+
+
+
+
+
+
+
+
+
+/* Testing CSS */
+
+.bg-container{
+    position: relative;
+    display: flex;
+    background-color: #393939;
+    width: 100%;
+    height: 100%;
+}
+.bg-video-container{
+    /* position: absolute; */
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: baseline;
+}
+.bg-video{
+    position: absolute;
+    object-fit: cover;
+}
+.bg-image-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    max-width: 350px;
+    min-width: 350px;
+    height: 60%;
+    min-height:350px;
+    max-height: 350px;
+    margin-left: 65vw;
+    margin-top: 10px;
+    overflow: hidden;
+    z-index: 5;
+}
+.bg-imagef{
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+.page-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-content-top{
+    width: 50%;
+    min-width: 550px;
+    height: 60%;
+    min-height:400px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.main-heading{
+    width: 70%;
+    height: 20%;
+    font-family: "Black Ops One", system-ui;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.sub-heading{
+    width: 100%;
+    height: auto;
+    min-height: 25%;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.go-to-button{
+    border: 2px solid white;
+    margin-top: 40px;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+.go-to-button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;    
+    transition: all 0.4s ease-in-out;
+}
+.go-to-button-arrow{
+    margin-left: 10px;
+    margin-top: 2.5px;
+}
+
+
+.page-content-bottom{
+    position: relative;
+    display: flex;
+    width: 90%;
+    min-width: 870px;
+    height: 25%;
+    min-height: 170px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.bottom-info{
+    width: 25%;
+    height: 100%;
+    background-image: linear-gradient(to right, #393939 , rgb(0, 0, 0));
+}
+.bottom-info-head{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    min-height: 30%;
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.bottom-info-data{
+    width: 80%;
+    height: auto;
+    min-height: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: "Black Ops One", system-ui;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+    
