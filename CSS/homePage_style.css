@@ -244,7 +244,7 @@ html,body{
     font-size: 20px;
 }
 .go-to-button:hover{
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     font-weight: bold;
     cursor: pointer;    
@@ -274,7 +274,8 @@ html,body{
 .bottom-info{
     width: 25%;
     height: 100%;
-    background-image: linear-gradient(to right, #393939 , rgb(0, 0, 0));
+    background-image: linear-gradient(to right, #d6d6d6 , rgb(130, 130, 130));
+    box-shadow: 0px 0px 10px black;
 }
 .bottom-info-head{
     display: flex;
@@ -308,6 +309,18 @@ html,body{
     min-height: 400px;
     max-height: 600px;
     background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-center-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(129, 129, 129);
+    width: 90%;
+    height: 80%;
 }
 
 
@@ -318,22 +331,6 @@ html,body{
     height: 80%;
     width: auto;
 }
-
-/* Air force specific styles */
-
-/* #iaf-bg-video-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#iaf-background-video{
-    transform: translateY(-12.5%);
-} */
-
-
-
-
 
 
 
